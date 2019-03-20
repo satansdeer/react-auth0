@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
 import {FlexWrapper} from '../Components'
 import loading from './loading.svg';
-import {withAuth} from '../Auth/Auth'
 
 class Callback extends Component {
-  componentDidMount(){
-      const {handleAuthentication} = this.props;
-      if(handleAuthentication){
-          handleAuthentication()
-      }
-  }
-
   render() {
     return (
       <FlexWrapper >
@@ -20,4 +12,4 @@ class Callback extends Component {
   }
 }
 
-export default withAuth(Callback);
+export default Callback;

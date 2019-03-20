@@ -1,5 +1,5 @@
 import React from "react";
-import { FlexWrapper, Panel, Button } from "../Components";
+import { FlexWrapper, Panel } from "../Components";
 
 export default () => (
   <FlexWrapper>
