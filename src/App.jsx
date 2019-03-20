@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route, Switch, Redirect } from "react-router-dom";
-import Index from "./Index";
+import Public from "./Public";
 import Private from "./Private";
 import Callback from "./Callback";
 import Login from "./Login";
-import { AuthProvider } from "./Auth/Auth";
+import { AuthProvider } from "./Auth";
 import { PrivateRoute } from "./PrivateRoute";
 import { Nav, NavLink } from "./Components";
 
@@ -21,7 +21,7 @@ class App extends Component {
         </Nav>
 
         <Switch>
-          <Route path="/public" component={Index} />
+          <Route path="/public" component={Public} />
           <Route path="/callback" component={Callback} />
           <Route path="/login" component={Login} />
           <PrivateRoute path="/private" component={Private} />

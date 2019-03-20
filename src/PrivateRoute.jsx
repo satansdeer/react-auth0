@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import { withAuth } from "./Auth/Auth";
+import { withAuth } from "./Auth";
 
 export const PrivateRoute = withAuth(
   ({ component: RouteComponent, isAuthorized, loginPath, ...rest }) => (

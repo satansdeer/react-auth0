@@ -1,7 +1,7 @@
 import React from "react";
 import { FlexWrapper, Panel, Button } from "../Components";
 import { Redirect } from "react-router-dom";
-import { withAuth } from "../Auth/Auth";
+import { withAuth } from "../Auth";
 
 export default withAuth(({ isAuthorized, authorize }) =>
   isAuthorized ? (
